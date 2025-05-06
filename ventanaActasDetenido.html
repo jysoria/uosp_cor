@@ -92,7 +92,7 @@
             <li><a href="https://drive.google.com/file/d/ID_5/view" target="_blank">6. Acta de detención y notificación de derechos</a></li>
             <li><a href="https://drive.google.com/file/d/ID_6/view" target="_blank">7. Formulario Art 36 convención de viena</a></li>
             <li><a href="https://drive.google.com/file/d/ID_7/view" target="_blank">8. Formulario cadena de custodia</a></li>
-            <li><a href="https://drive.google.com/file/d/ID_5/view" target="_blank">9. Acta de secuestro de elementos personales</a></li>
+            <li><a href="https://drive.google.com/file/d/ID_5/view" target="_blank">9. Acta de secuestro de elementos personales</a></ul>li>
             <li><a href="https://drive.google.com/file/d/ID_5/view" target="_blank">10. Acta de secuestro de sustancia</a></li>
             <li><a href="https://drive.google.com/file/d/ID_8/view" target="_blank">11. Nota a migraciones</a></li>
             <li><a href="https://drive.google.com/file/d/ID_9/view" target="_blank">12. Huellas</a></li>
@@ -102,3 +102,68 @@
       	</ul>
   	</body>
 </html>
+
+/*
+$w.onReady(function () {
+
+    //Código para la ventana de actas de detenido
+    $w("#abrirVentanaDetenido").onClick(() => {
+        $w("#ventanaActasDetenido").show();
+        $w("#ventanaActasDetenido").scrollTo()
+        .then(() => {
+            // Ajuste adicional hacia arriba (por ejemplo, -100 píxeles)
+            setTimeout(() => {
+                if (typeof window !== "undefined") {
+                    window.scrollBy(0, -175); // Subí más si necesitás (-150, -200, etc.)
+                }
+            }, 100); // Esperá un poco para que el scroll inicial se complete
+        })
+        .catch((error) => {
+            console.error("Error al hacer scroll:", error);
+        });
+    });
+    $w("#cerrarVentanaDetenido").onClick(() => {
+        $w("#ventanaActasDetenido").hide();
+    });
+
+    //Código para ventana de actas de aprehendido
+    $w("#abrirVentanaAprehendido").onClick(() => {
+        $w("#ventanaActasAprehendido").show();
+        $w("#ventanaActasAprehendido").scrollTo()
+        .then(() => {
+            // Ajuste adicional hacia arriba (por ejemplo, -100 píxeles)
+            setTimeout(() => {
+                if (typeof window !== "undefined") {
+                    window.scrollBy(0, -175); // Subí más si necesitás (-150, -200, etc.)
+                }
+            }, 100); // Esperá un poco para que el scroll inicial se complete
+        })
+        .catch((error) => {
+            console.error("Error al hacer scroll:", error);
+        });
+    });
+    $w("#cerrarVentanaAprehendido").onClick(() => {
+        $w("#ventanaActasAprehendido").hide();
+    });
+
+    //Código para ventana de actas de tenencia simple
+    $w("#abrirVentanaTenenciaSimple").onClick(() => {
+        $w("#ventanaActasTenenciaSimple").show();
+        $w("#ventanaActasTenenciaSimple").scrollTo()
+        .then(() => {
+            // Ajuste adicional hacia arriba (por ejemplo, -100 píxeles)
+            setTimeout(() => {
+                if (typeof window !== "undefined") {
+                    window.scrollBy(0, -175); // Subí más si necesitás (-150, -200, etc.)
+                }
+            }, 100); // Esperá un poco para que el scroll inicial se complete
+        })
+        .catch((error) => {
+            console.error("Error al hacer scroll:", error);
+        });
+    });
+    $w("#cerrarVentanaTenenciaSimple").onClick(() => {
+        $w("#ventanaActasTenenciaSimple").hide();
+    });
+});
+*/
